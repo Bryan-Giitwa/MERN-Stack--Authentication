@@ -5,12 +5,17 @@ import Card from "../../components/card/Card";
 import { BiLogIn } from "react-icons/bi";
 import PasswordInput from "../../components/passwordInput/PasswordInput";
 
+const initialState = {
+  email: "",
+  password: "",
+};
+
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [formData, setFormData] = useState(initialState);
+  const { email, password } = formData;
 
   const handleInputChange = (e) => {
-    setEmail(e.target.value);
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const loginUser = (e) => {
