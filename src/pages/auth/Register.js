@@ -109,33 +109,35 @@ const Register = () => {
               onChange={handleInputChange}
             />
             {/* Password validation strength */}
-            <card cardClass={styles.group}>
-              <ul className="form-list">
-                <li>
-                  <span className={styles.indicator}>
-                    {switchIcon(uCase)}
-                    &nbsp; Lowercase & Uppercase
-                  </span>
-                </li>
-                <li>
-                  <span className={styles.indicator}>
-                    {switchIcon(num)}
-                    &nbsp; Number (0-9)
-                  </span>
-                </li>
-                <li>
-                  <span className={styles.indicator}>
-                    {switchIcon(sChar)}
-                    &nbsp; Special Character (!@#$%^&*)
-                  </span>
-                </li>
-                <li>
-                  <span className={styles.indicator}>
-                    {switchIcon(passLength)}
-                    &nbsp; Atleast 6 characters
-                  </span>
-                </li>
-              </ul>
+            <card>
+              <div className={styles.group}>
+                <ul className="form-list">
+                  <li>
+                    <span className={styles.indicator}>
+                      {switchIcon(uCase)}
+                      &nbsp; Lowercase & Uppercase
+                    </span>
+                  </li>
+                  <li>
+                    <span className={styles.indicator}>
+                      {switchIcon(num)}
+                      &nbsp; Number (0-9)
+                    </span>
+                  </li>
+                  <li>
+                    <span className={styles.indicator}>
+                      {switchIcon(sChar)}
+                      &nbsp; Special Character (!@#$%^&*)
+                    </span>
+                  </li>
+                  <li>
+                    <span className={styles.indicator}>
+                      {switchIcon(passLength)}
+                      &nbsp; Atleast 6 characters
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </card>
             <button type="submit" className="--btn --btn-primary --btn-block">
               Register
