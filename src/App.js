@@ -8,6 +8,7 @@ import Reset from "./pages/auth/Reset";
 import LoginWithCode from "./pages/auth/LoginWithCode";
 import Profile from "./pages/profile/Profile";
 import Verify from "./pages/auth/Verify";
+import ChangePassword from "./pages/changePassword/ChangePassword";
 
 function App() {
   return (
@@ -40,6 +41,14 @@ function App() {
             element={
               <Layout>
                 <Verify />
+              </Layout>
+            }
+          />
+          <Route
+            path="/ChangePassword"
+            element={
+              <Layout>
+                <ChangePassword />
               </Layout>
             }
           />
