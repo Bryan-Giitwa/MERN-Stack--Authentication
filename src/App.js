@@ -28,7 +28,7 @@ function App() {
           <Route path="/resetpassword/:resetToken" element={<Reset />} />
           <Route path="/loginwithcode/:email" element={<LoginWithCode />} />
           <Route
-            path="/"
+            path="/profile"
             element={
               <Layout>
                 <Profile />
@@ -36,7 +36,7 @@ function App() {
             }
           />
           <Route
-            path="/"
+            path="/verify/:verificationToken"
             element={
               <Layout>
                 <Verify />

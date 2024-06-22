@@ -1,0 +1,26 @@
+.--btn-google {
+  width: 100%;
+  max-width: 400px;
+}
+
+.home-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Display the list items horizontally */
+  justify-content: space-around;
+
+  li {
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+  a:hover {
+    color: #2d4373;
+  }
+}
